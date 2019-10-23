@@ -1,4 +1,3 @@
-const net = require('net');
 let connection;
 
 
@@ -17,6 +16,15 @@ const handleUserInput = (data) =>{
   }
   if (data === 'd'){
     connection.write('Move: right')
+  }
+  if (data === 'k'){
+    connection.write('Say: beep')
+  }
+  if (data === 'i'){
+    connection.write('Say: fite me!!')
+  }
+  if (data === 'o'){
+    connection.write('Say: rekt')
   }
 }
 
